@@ -1,4 +1,5 @@
 import React from "react";
+import { menu } from "../assets";
 
 const NavBar = () => {
 	return (
@@ -22,6 +23,15 @@ const NavBar = () => {
 					<div>
 						<button className="btn sign-up ">Sign up</button>
 						<button className="btn sign-in">Sign in</button>
+					</div>
+				</div>
+
+				<div className="secondNav">
+					<div>
+						<img src={menu} />
+					</div>
+					<div>
+						<img src={menu} />
 					</div>
 				</div>
 			</div>

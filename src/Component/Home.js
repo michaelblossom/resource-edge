@@ -1,4 +1,5 @@
 import React from "react";
+
 import { directlist2, hero } from "../assets/";
 import { group6 } from "../assets/";
 import { group7a } from "../assets/";
@@ -67,7 +68,7 @@ const Home = () => {
 						</div>
 					</div>
 					<div className="EmployeeDirectory">
-						<p>Frame 19864</p>
+						{/* <p>Frame 19864</p> */}
 						<img src={frame1} />
 					</div>
 				</div>

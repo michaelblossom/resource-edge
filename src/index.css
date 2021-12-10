@@ -3,11 +3,19 @@
 	padding: 0;
 }
 body {
-	background: #e5e5e5;
+	/* background: #e5e5e5; */
+
+	/* background: red; */
 }
 .container {
 	max-width: 70%;
 	margin: auto;
+}
+
+.secondNav {
+	display: none;
+	align-items: center;
+	justify-content: space-between;
 }
 .header ul {
 	margin: 0;
@@ -65,8 +73,10 @@ body {
 
 .vision {
 	background: #f4f5f7;
-	margin-top: 30px;
-	margin-bottom: 30px;
+	padding-top: 50px;
+	padding-bottom: 30px;
+	/* margin-top: 30px;
+	margin-bottom: 30px; */
 }
 .vision h3 {
 	font-size: 48px;
@@ -113,11 +123,12 @@ body {
 
 .EmployeeDirectory {
 	margin-top: 50px;
+	margin-bottom: -50px;
 }
 
 .section {
 	display: grid;
-	margin-top: 90px;
+	margin-top: 70px;
 	grid-template-columns: 1.5fr 1fr 1fr;
 	align-content: center;
 	justify-content: center;
@@ -150,7 +161,11 @@ body {
 
 .travelLogistic {
 	margin-top: 50px;
+	/* background: chartreuse; */
 }
+/* .travelLogistic img {
+	margin-right: 60px;
+} */
 
 .logo {
 	display: grid;
@@ -161,11 +176,6 @@ body {
 }
 
 .footer {
-	/* display: flex; */
-	/* align-items: center; */
-	/* justify-content: center; */
-	display: grid;
-	grid-template-columns: 1fr 1fr;
 	background: #091e42;
 	padding: 50px;
 	color: #fff;
@@ -173,11 +183,81 @@ body {
 
 .footer h3 {
 	padding-bottom: 10px;
-	font-size: 18px;
+	font-size: 40px;
+	color: #a5adba;
 }
 .footer p {
 	font-size: 18px;
 }
 .footer small {
 	font-size: 16px;
+}
+
+.innerFooter {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.btn-component {
+	display: inline-block;
+	background: #000;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	margin: 5px;
+	border-radius: 5px;
+	cursor: pointer;
+	text-decoration: none;
+	font-size: 15px;
+	font-family: inherit;
+	width: 100%;
+}
+
+.btn-component:focus {
+	outline: none;
+}
+
+.signin {
+	background: chartreuse;
+}
+
+.signin-navbar {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-content: center;
+	justify-content: space-between;
+	padding-bottom: 100px;
+}
+
+.signin .container p {
+	padding-bottom: 30px;
+}
+
+.signin .container .about {
+	padding-bottom: 50px;
+}
+
+/*form designing  */
+
+.add-form {
+	margin-bottom: 40px;
+}
+.form-control {
+	margin: 20px;
+}
+
+.form-control label {
+	display: block;
+}
+
+.form-control input {
+	width: 100%;
+	height: 40px;
+	margin: 5px;
+	padding: 3px 7px;
+	font-size: 17px;
+}
+
+.signin .container .button {
+	display: block;
 }
