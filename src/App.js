@@ -12,9 +12,9 @@ function App() {
 			<NavBar />
 			<Home />
 			<Footer />
-			<Signin />
+			{/* <Signin /> */}
 
-			<ResetEmptyEmail />
+			{/* <ResetEmptyEmail /> */}
 		</div>
 	);
 }
