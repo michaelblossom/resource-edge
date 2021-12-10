@@ -4,7 +4,7 @@ import NavBar from "./Component/NavBar";
 import Home from "./Component/Home";
 import Footer from "./Component/Footer";
 import Signin from "./Authentication/Sign-in";
-import ResetEmptyEmail from "./Authentication/Reset-Passward-Empty-email";
+import ResetEmptyEmail from "./Authentication/Input-Email";
 
 function App() {
 	return (
@@ -14,7 +14,7 @@ function App() {
 			<Footer />
 			<Signin />
 
-			{/* <ResetEmptyEmail /> */}
+			<ResetEmptyEmail />
 		</div>
 	);
 }

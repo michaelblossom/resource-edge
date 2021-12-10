@@ -239,6 +239,43 @@ body {
 
 /*form designing  */
 
+/* empty email */
+
+.emptyEmail {
+	max-width: 360px;
+	margin: 30px auto;
+	overflow: auto;
+	min-height: 300px;
+	border: 1px solid steelblue;
+	padding: 30px;
+	border-radius: 5px;
+}
+
+.emptyEmail .logIn {
+	width: 20%;
+	margin: auto;
+	font-size: 24px;
+	font-weight: 700;
+	padding-bottom: 20px;
+}
+.emptyEmail .accessAccount {
+	width: 60%;
+	margin: auto;
+	font-size: 14px;
+	font-weight: 450;
+	padding-bottom: 20px;
+}
+
+.emptyEmail .passward {
+	width: 40%;
+	margin: auto;
+	font-size: 14px;
+	font-weight: 450;
+	color: #5088dc;
+	/* margin: 0;
+	padding: 0; */
+}
+
 .add-form {
 	margin-bottom: 40px;
 }
@@ -248,16 +285,27 @@ body {
 
 .form-control label {
 	display: block;
+	font-weight: 500;
+	padding-bottom: 10px;
+	padding-left: 6px;
 }
 
 .form-control input {
 	width: 100%;
-	height: 40px;
+	height: 30px;
 	margin: 5px;
-	padding: 3px 7px;
-	font-size: 17px;
+	padding: 0 7px;
+	font-size: 14px;
 }
-
+.form-control2 input {
+	background: #f4f5f7;
+	border: none;
+}
+.form-control3 input {
+	height: 3px;
+	background: #f4f5f7;
+	border: none;
+}
 .signin .container .button {
 	display: block;
 }
