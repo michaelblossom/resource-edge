@@ -20,7 +20,8 @@ import vector4 from "./image/Vector (4).png";
 import vector5 from "./image/Vector (5).png";
 import vector8 from "./image/Vector (8).png";
 import vector from "./image/Vector.png";
-
+import check from "./image/check.png";
+import editIcon from "./image/edit-filled.png";
 export {
 	hero,
 	genesysLogo,
@@ -44,4 +45,6 @@ export {
 	vector5,
 	vector8,
 	vector,
+	check,
+	editIcon
 };
