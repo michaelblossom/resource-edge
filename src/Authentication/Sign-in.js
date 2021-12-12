@@ -3,7 +3,7 @@ import Button from "../Button/Button";
 import { vector4 } from "../assets";
 import { cross } from "../assets";
 
-const Signin = () => {
+const MobileNav = ({ signin }) => {
 	return (
 		<div className=" signin">
 			<div className="container">
@@ -11,7 +11,7 @@ const Signin = () => {
 					<div>
 						<img src={vector4} />
 					</div>
-					<div>
+					<div onClick={() => signin()}>
 						<img src={cross} />
 					</div>
 				</div>
@@ -29,4 +29,4 @@ const Signin = () => {
 	);
 };
 
-export default Signin;
+export default MobileNav;

@@ -1,9 +1,9 @@
-import logo from "./logo.svg";
+import React, { useState } from "react";
 import "./App.css";
 import NavBar from "./Component/NavBar";
 import Home from "./Component/Home";
 import Footer from "./Component/Footer";
-import Signin from "./Authentication/Sign-in";
+import MobileNav from "./Authentication/Sign-in";
 import InputWithEmbededImage from "./Input-with-embeded-image/InputWithImage";
 import FormWithEmbededImage from "./Authentication/Form-With-Embeded-Image";
 
@@ -17,9 +17,15 @@ import NavDropDown from "./Dashboard/NavDropDown";
 
 import SignUp from "./Authentication/Sign-up";
 function App() {
+	const [showSignin, setShowSignin] = useState(false);
+
+	const signin = () => {
+		setShowSignin(!showSignin);
+	};
 	return (
 		<div>
-			<NavBar />
+			{showSignin && <MobileNav showSignin={showSignin} signin={signin} />}
+			<NavBar signin={signin} />
 
 			{/* <Routes>
 				<Route path="/" element={<Signin />} />
@@ -28,13 +34,13 @@ function App() {
 
 			<Home />
 			<Footer />
-			<Signin />
+
 			{/* <InputPasswardEmpty /> */}
 			{/* <FormValidation /> */}
 			{/* <SignUp /> */}
 
-			<BaseEmployee />
-			<NavDropDown />
+			{/* <BaseEmployee /> */}
+			{/* <NavDropDown /> */}
 			{/* </Routes> */}
 		</div>
 	);

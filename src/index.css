@@ -3,6 +3,9 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+body {
+	position: relative;
+}
 
 .container {
 	max-width: 70%;
@@ -235,13 +238,17 @@
 }
 
 .signin {
-	max-width: 360px;
-	margin: 30px auto;
+	max-width: 100%;
+	width: 100%;
+	/* margin: 30px auto; */
 	overflow: auto;
 	min-height: 350px;
 	border: 1px solid steelblue;
 	padding: 5px;
 	border-radius: 5px;
+	position: absolute;
+	z-index: 100;
+	background: #fff;
 }
 
 .signin-navbar {
@@ -814,8 +821,13 @@
 		justify-content: center;
 	}
 
+	.footer .media-icons {
+		width: 150px;
+		display: flex;
+		justify-content: space-between;
+	}
 	.footer .media-icons img {
-		margin-left: 20px;
+		margin-left: 0px;
 		margin-bottom: 50px;
 	}
 
@@ -844,6 +856,7 @@
 		display: grid;
 		grid-template-columns: 1fr;
 		grid-gap: 30px;
+		justify-items: center;
 	}
 
 	.innerFooter .small small {
@@ -1079,7 +1092,15 @@
 	.footer small {
 		font-size: 10px;
 	}
-
+	.footer .media-icons {
+		width: 150px;
+		display: flex;
+		justify-content: space-between;
+	}
+	.footer .media-icons img {
+		margin-left: 0px;
+		margin-bottom: 50px;
+	}
 	.innerFooter {
 		display: grid;
 		grid-template-columns: 1fr;

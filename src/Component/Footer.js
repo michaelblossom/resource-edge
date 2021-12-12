@@ -7,7 +7,7 @@ const Footer = () => {
 	return (
 		<footer className="footer">
 			<div className="innerFooter container">
-				<div>
+				<div className="footer-logo">
 					<h3>resource edge</h3>
 					<p>Throw paperwork in the trash</p>
 				</div>

@@ -2,7 +2,7 @@ import React from "react";
 import { menu } from "../assets";
 import { Link } from "react-router-dom";
 
-const NavBar = () => {
+const NavBar = ({ signin }) => {
 	return (
 		<div className="nav-bar">
 			<div className="container">
@@ -33,7 +33,7 @@ const NavBar = () => {
 					<div>
 						<img src={menu} />
 					</div>
-					<div>
+					<div onClick={() => signin()}>
 						<img src={menu} />
 					</div>
 				</div>
