@@ -31,6 +31,10 @@ import cross from "./image/cross.png";
 import vector6 from "./image/Vector (6).png";
 import vector7 from "./image/Vector (7).png";
 import vector9 from "./image/Vector (9).png";
+import logo from "./image/logo.png";
+import group from "./image/Group.png";
+import group43 from "./image/Group 43 (1).png";
+import group44 from "./image/Group 44.png";
 export {
 	hero,
 	genesysLogo,
@@ -65,4 +69,8 @@ export {
 	vector6,
 	vector7,
 	vector9,
+	logo,
+	group,
+	group43,
+	group44,
 };

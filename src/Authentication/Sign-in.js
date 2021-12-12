@@ -2,27 +2,28 @@ import React from "react";
 import Button from "../Button/Button";
 import { vector4 } from "../assets";
 import { cross } from "../assets";
+import { logo } from "../assets";
 
 const MobileNav = ({ signin }) => {
 	return (
 		<div className=" signin">
-			<div className="container">
+			<div className="container-mobile">
 				<div className="signin-navbar">
 					<div>
-						<img src={vector4} />
+						<img src={logo} />
 					</div>
 					<div onClick={() => signin()}>
 						<img src={cross} />
 					</div>
 				</div>
+				<ul className="mobile-nav-links">
+					<li>Featurers</li>
+					<li>About</li>
+				</ul>
 
-				<div>
-					<p>Featurers</p>
-					<p className="about">About</p>
-				</div>
 				<div className="button">
-					<Button value="Log in" color="#0052cc" />
-					<Button value="sign up" color="#a8a8a8" textColor="#bec3cd" />
+					<button className="btn btn-primary btn-block">Login</button>
+					<button className="btn btn-default btn-block">Login</button>
 				</div>
 			</div>
 		</div>

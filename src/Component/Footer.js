@@ -28,7 +28,7 @@ const Footer = () => {
 					</div>
 					<div className="small">
 						<small>
-							copyright Genesys DevStudio.<span> All rights reserved</span>
+							Copyright Genesys DevStudio.<span> All rights reserved</span>
 						</small>
 					</div>
 				</div>

@@ -11,7 +11,7 @@ import FormPasswardEmpty from "./Authentication/Form-Passward-Empty";
 import InputPasswardEmpty from "./Authentication/Input-passward-Empty";
 
 import FormValidation from "./Authentication/Form";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import BaseEmployee from "./Dashboard/BaseEmployee";
 import NavDropDown from "./Dashboard/NavDropDown";
 
@@ -25,20 +25,16 @@ function App() {
 	return (
 		<div>
 			{showSignin && <MobileNav showSignin={showSignin} signin={signin} />}
-			<NavBar signin={signin} />
 
-			{/* <Routes>
-				<Route path="/" element={<Signin />} />
-				<Route path="/emailfilled" element={<InputEmailFilled />} />
-				<Route path="/email" element={<InputEmailTyping />} /> */}
+			<Routes>
+				<Route path="/" element={<Home signin={signin} />} />
+				<Route path="/dashboard" element={<BaseEmployee />} />
+				<Route path="/login" element={<FormValidation />} />
+				<Route path="/password" element={<InputPasswardEmpty />} />
+			</Routes>
 
-			<Home />
-			<Footer />
-
-			{/* <InputPasswardEmpty /> */}
 			{/* <FormValidation /> */}
 			{/* <SignUp /> */}
-
 			{/* <BaseEmployee /> */}
 			{/* <NavDropDown /> */}
 			{/* </Routes> */}

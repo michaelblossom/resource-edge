@@ -1,5 +1,6 @@
 import React from "react";
 import { menu } from "../assets";
+import { logo } from "../assets";
 import { Link } from "react-router-dom";
 
 const NavBar = ({ signin }) => {
@@ -31,7 +32,7 @@ const NavBar = ({ signin }) => {
 
 				<div className="secondNav">
 					<div>
-						<img src={menu} />
+						<img src={logo} />
 					</div>
 					<div onClick={() => signin()}>
 						<img src={menu} />
