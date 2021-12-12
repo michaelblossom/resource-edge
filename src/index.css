@@ -1,12 +1,9 @@
 * {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
-body {
-	/* background: #e5e5e5; */
 
-	/* background: red; */
-}
 .container {
 	max-width: 70%;
 	margin: auto;
@@ -28,10 +25,11 @@ body {
 }
 .header a {
 	text-decoration: none;
-	/* color: #ccc; */
 }
 .resource {
+	font-size: 20px;
 	color: #0052cc;
+	font-weight: bold;
 }
 .header {
 	margin-top: 10px;
@@ -57,7 +55,6 @@ body {
 	font-size: 40px;
 	font-weight: bold;
 	padding-bottom: 30px;
-	/* line-height: 120%; */
 }
 .hero-image img {
 	width: 710px;
@@ -75,8 +72,6 @@ body {
 	background: #f4f5f7;
 	padding-top: 50px;
 	padding-bottom: 30px;
-	/* margin-top: 30px;
-	margin-bottom: 30px; */
 }
 .vision h3 {
 	font-size: 48px;
@@ -91,7 +86,6 @@ body {
 }
 
 .side-bar {
-	/* background: #fff; */
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	align-content: center;
@@ -101,7 +95,6 @@ body {
 
 .side-bar .grading {
 	background: #fff;
-	/* padding: 20px; */
 	border-radius: 10px;
 	margin-top: 20px;
 	display: flex;
@@ -132,7 +125,6 @@ body {
 	grid-template-columns: 1.5fr 1fr 1fr;
 	align-content: center;
 	justify-content: center;
-	/* grid-gap: 20px; */
 }
 
 .section img {
@@ -161,7 +153,6 @@ body {
 
 .travelLogistic {
 	margin-top: 50px;
-	/* background: chartreuse; */
 }
 .payroll {
 	margin-top: 50px;
@@ -174,13 +165,13 @@ body {
 	display: grid;
 	margin-top: 50px;
 	margin-bottom: 80px;
-	grid-template-columns: 1.5fr 1fr 1fr 1fr;
-	align-content: center;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	align-items: center;
 	justify-content: center;
 }
 
 .logo img {
-	width: 100px;
+	width: 200px;
 	margin: auto;
 }
 
@@ -188,6 +179,23 @@ body {
 	background: #091e42;
 	padding: 50px;
 	color: #fff;
+}
+
+.footer .media-icons {
+	display: flex;
+	align-items: center;
+	align-content: center;
+	/* align-items: flex-end; */
+}
+.footer .media-icons img {
+	margin-left: 20px;
+	margin-bottom: 10px;
+}
+
+.footer .media {
+	display: flex;
+	align-items: flex-end;
+	flex-direction: column;
 }
 
 .footer h3 {
@@ -205,11 +213,11 @@ body {
 .innerFooter {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	align-items: center;
 }
 
 .btn-component {
 	display: inline-block;
-	/* background: #0052cc; */
 	color: #fff;
 	border: none;
 	padding: 5px 10px;
@@ -363,7 +371,6 @@ body {
 	width: 100%;
 	height: 30px;
 	margin: 5px;
-	/* padding: 0 7px; */
 	font-size: 14px;
 }
 
@@ -395,9 +402,9 @@ body {
 
 .resourseEdge {
 	display: flex;
+	align-items: center;
 	justify-content: space-between;
 	margin-top: 30px;
-	/* margin: 0 20px 0 0; */
 }
 .resourseEdge p {
 	padding-left: 30px;
@@ -415,6 +422,7 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	box-shadow: -1px 6px 8px -10px rgba(0, 0, 0, 0.26);
 }
 .baseEmployee .navBar .human {
 	margin-right: 20px;
@@ -449,6 +457,7 @@ body {
 	justify-content: space-between;
 	border: 2px solid #e3eaef;
 	margin-bottom: 8px;
+	/* box-shadow: -1px 6px 8px 0px rgba(0, 0, 0, 0.26); */
 }
 .requirements2 {
 	display: flex;
@@ -462,13 +471,14 @@ body {
 }
 
 .requirements .start {
-	padding-right: 20px;
+	margin-right: 20px;
 	font-size: 14px;
 	font-weight: 500;
 }
 
 .requirements .resume {
 	background: #f5f6f7;
+	padding: 4px;
 }
 .requirements .begin {
 	color: #0052cc;
@@ -508,6 +518,7 @@ body {
 	align-items: center;
 	justify-content: space-between;
 	margin-top: 20px;
+	/* box-shadow: -1px 6px 8px 0px rgba(0, 0, 0, 0.26); */
 }
 .dropDown .employee2 {
 	display: flex;
@@ -517,6 +528,14 @@ body {
 
 .employee2 p {
 	padding-left: 20px;
+}
+
+.box-shadow {
+	box-shadow: -1px 6px 8px 0px rgba(0, 0, 0, 0.26);
+}
+
+.dropDown .log {
+	margin-top: 20px;
 }
 
 @media (max-width: 768px) {
@@ -613,7 +632,9 @@ body {
 	.innerFooter {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		grid-gap: 30px;
+		/* grid-gap: 30px; */
+		align-items: center;
+		justify-content: space-between;
 	}
 }
 
@@ -783,6 +804,26 @@ body {
 		background: #091e42;
 		padding: 50px;
 		color: #fff;
+	}
+
+	.innerFooter {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		align-items: center;
+		/* align-content: center; */
+		justify-content: center;
+	}
+
+	.footer .media-icons img {
+		margin-left: 20px;
+		margin-bottom: 50px;
+	}
+
+	.footer .media {
+		display: flex;
+		align-items: center;
+		/* justify-content: center; */
+		flex-direction: column;
 	}
 
 	.footer h3 {

@@ -26,9 +26,9 @@ function App() {
 				<Route path="/emailfilled" element={<InputEmailFilled />} />
 				<Route path="/email" element={<InputEmailTyping />} /> */}
 
-			{/* <Home /> */}
-			{/* <Footer /> */}
-			{/* <Signin /> */}
+			<Home />
+			<Footer />
+			<Signin />
 			{/* <InputPasswardEmpty /> */}
 			{/* <FormValidation /> */}
 			{/* <SignUp /> */}

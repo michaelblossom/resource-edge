@@ -27,6 +27,10 @@ import group1 from "./image/Group (1).png";
 import separator from "./image/Seperator.png";
 import circle from "./image/Circle - empty.png";
 import image1 from "./image/image 1.png";
+import cross from "./image/cross.png";
+import vector6 from "./image/Vector (6).png";
+import vector7 from "./image/Vector (7).png";
+import vector9 from "./image/Vector (9).png";
 export {
 	hero,
 	genesysLogo,
@@ -57,4 +61,8 @@ export {
 	separator,
 	circle,
 	image1,
+	cross,
+	vector6,
+	vector7,
+	vector9,
 };

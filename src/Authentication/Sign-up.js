@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "../Button/Button";
 import { vector4 } from "../assets";
-import { vector8 } from "../assets";
+import { cross } from "../assets";
 
 const SignUp = () => {
 	return (
@@ -12,7 +12,7 @@ const SignUp = () => {
 						<img src={vector4} />
 					</div>
 					<div>
-						<img src={vector8} />
+						<img src={cross} />
 					</div>
 				</div>
 

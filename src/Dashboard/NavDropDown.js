@@ -34,6 +34,11 @@ const NavDropDown = () => {
 					</div>
 					<div>{/* <img alt="small image icon" src={check} /> */}</div>
 				</div>
+
+				<div className="box-shadow"></div>
+				<div>
+					<p className="log">Logout</p>
+				</div>
 			</div>
 		</div>
 	);
