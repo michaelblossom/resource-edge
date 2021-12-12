@@ -33,7 +33,7 @@ function App() {
 				<Route path="/password" element={<InputPasswardEmpty />} />
 			</Routes>
 
-			{/* <FormValidation /> */}
+			<FormValidation />
 			{/* <SignUp /> */}
 			{/* <BaseEmployee /> */}
 			{/* <NavDropDown /> */}
