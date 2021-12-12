@@ -1,5 +1,6 @@
 import React from "react";
 import { check } from "../assets";
+import InputWithEmbededImage from "../Input-with-embeded-image/InputWithImage";
 
 const FormValidation = ({ placeholder }) => {
 	return (
@@ -13,7 +14,8 @@ const FormValidation = ({ placeholder }) => {
 			<form className="add-form">
 				<div className="form-control">
 					<label>Email Address</label>
-					<input type="email" placeholder={placeholder} />
+					{/* <input type="email" placeholder={placeholder} /> */}
+					<InputWithEmbededImage placeholder="Enter Email" type="email" />
 				</div>
 				<div className="form-control form-control2">
 					<input type="submit" value="Log in" />

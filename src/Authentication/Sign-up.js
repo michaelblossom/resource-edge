@@ -3,7 +3,7 @@ import Button from "../Button/Button";
 import { vector4 } from "../assets";
 import { vector8 } from "../assets";
 
-const Signin = () => {
+const SignUp = () => {
 	return (
 		<div className=" signin">
 			<div className="container">
@@ -21,7 +21,7 @@ const Signin = () => {
 					<p className="about">About</p>
 				</div>
 				<div className="button">
-					<Button value="Log in" color="#0052cc" />
+					<Button value="Log out" color="#0052cc" />
 					<Button value="sign up" color="#a8a8a8" textColor="#bec3cd" />
 				</div>
 			</div>
@@ -29,4 +29,4 @@ const Signin = () => {
 	);
 };
 
-export default Signin;
+export default SignUp;

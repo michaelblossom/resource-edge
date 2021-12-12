@@ -22,6 +22,11 @@ import vector8 from "./image/Vector (8).png";
 import vector from "./image/Vector.png";
 import check from "./image/check.png";
 import editIcon from "./image/edit-filled.png";
+import unn from "./image/image 7 (1).png";
+import group1 from "./image/Group (1).png";
+import separator from "./image/Seperator.png";
+import circle from "./image/Circle - empty.png";
+import image1 from "./image/image 1.png";
 export {
 	hero,
 	genesysLogo,
@@ -46,5 +51,10 @@ export {
 	vector8,
 	vector,
 	check,
-	editIcon
+	editIcon,
+	group1,
+	unn,
+	separator,
+	circle,
+	image1,
 };

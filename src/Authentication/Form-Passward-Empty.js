@@ -1,8 +1,8 @@
 import React from "react";
-import { editIcon } from "../assets";
+import { check, editIcon } from "../assets";
 import InputWithEmbededImage from "../Input-with-embeded-image/InputWithImage";
 
-const FormPasswardEmpty = ({ placeholder }) => {
+const FormPasswardEmpty = () => {
 	return (
 		<div className="emptyEmail">
 			<div className="logIn">
@@ -22,8 +22,12 @@ const FormPasswardEmpty = ({ placeholder }) => {
 			</div>
 			<form className="add-form">
 				<div className="form-control control">
-					<label>Email Address</label>
-					<InputWithEmbededImage placeholder="michael@genesistechub.com" />
+					<label>Password</label>
+					<InputWithEmbededImage
+						placeholder="Enter password"
+						type="password"
+						src={check}
+					/>
 				</div>
 				<div className="form-control form-control2 second-input">
 					<input type="submit" value="Log in" />

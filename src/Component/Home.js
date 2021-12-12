@@ -10,6 +10,8 @@ import { directlist1 } from "../assets/";
 import { image10 } from "../assets/";
 import { image9 } from "../assets/";
 import { image6 } from "../assets/";
+import { group1 } from "../assets";
+import { unn } from "../assets/";
 // import { group7b } from "../assets/";
 
 const Home = () => {
@@ -59,7 +61,7 @@ const Home = () => {
 						</div>
 						<div className="grading">
 							<img src={group7a} />
-							<h5>Employee Management</h5>
+							<h5>Paid off time</h5>
 							<p>
 								Employee can request for paid time-off, vacations, sick leaves
 								or educational leaves and get approvals all within Resource
@@ -129,13 +131,13 @@ const Home = () => {
 				</div>
 			</div>
 
-			<div className="container travelLogistic">
-				<img src={directlist1} />
+			<div className="container payroll">
+				<img src={group1} />
 			</div>
 
 			<div className="container logo">
 				<div>
-					<img src={image6} />
+					<img src={unn} />
 				</div>
 				<div>
 					<img src={image6} />

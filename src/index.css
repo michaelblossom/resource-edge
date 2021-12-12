@@ -163,16 +163,25 @@ body {
 	margin-top: 50px;
 	/* background: chartreuse; */
 }
-/* .travelLogistic img {
-	margin-right: 60px;
-} */
-
+.payroll {
+	margin-top: 50px;
+}
+.payroll img {
+	width: 800px;
+	margin: auto 60px;
+}
 .logo {
 	display: grid;
+	margin-top: 50px;
 	margin-bottom: 80px;
-	grid-template-columns: 1fr 1fr 2fr 1fr;
+	grid-template-columns: 1.5fr 1fr 1fr 1fr;
 	align-content: center;
 	justify-content: center;
+}
+
+.logo img {
+	width: 100px;
+	margin: auto;
 }
 
 .footer {
@@ -200,10 +209,10 @@ body {
 
 .btn-component {
 	display: inline-block;
-	background: #000;
+	/* background: #0052cc; */
 	color: #fff;
 	border: none;
-	padding: 10px 20px;
+	padding: 5px 10px;
 	margin: 5px;
 	border-radius: 5px;
 	cursor: pointer;
@@ -218,13 +227,22 @@ body {
 }
 
 .signin {
-	/* background: chartreuse; */
+	max-width: 360px;
+	margin: 30px auto;
+	overflow: auto;
+	min-height: 350px;
+	border: 1px solid steelblue;
+	padding: 5px;
+	border-radius: 5px;
 }
 
 .signin-navbar {
-	display: grid;
+	/* display: grid;
 	grid-template-columns: 1fr 1fr;
-	align-content: center;
+	align-items: center;
+	justify-items: space-between; */
+	display: flex;
+	align-items: center;
 	justify-content: space-between;
 	padding-bottom: 100px;
 }
@@ -279,7 +297,7 @@ body {
 	display: grid;
 	grid-template-columns: 2fr 1fr;
 	justify-items: center;
-	justify-content: space-between;
+	justify-items: space-between;
 	width: 55%;
 	margin: auto;
 }
@@ -307,13 +325,19 @@ body {
 /* stylling input with embeded image */
 .form-control4 input {
 	border: none;
+	width: 80%;
+}
+.form-control4 input:focus {
+	outline: none;
+	/* width: 80%; */
 }
 
 .form-control4 {
 	display: grid;
-	grid-template-columns: 3fr 1fr;
-	justify-items: center;
-	justify-content: space-between;
+	grid-template-columns: 90% 10%;
+	justify-items: space-between;
+	align-items: center;
+	/* justify-content: space-between; */
 	min-height: 3px;
 	max-width: 360px;
 	margin: 30px auto;
@@ -357,6 +381,142 @@ body {
 }
 .signin .container .button {
 	display: block;
+}
+
+/* stylling dashboard */
+
+.baseEmployee {
+	min-height: 700px;
+	max-width: 1000px;
+	border: 1px solid steelblue;
+	width: 80%;
+	margin: 30px auto;
+}
+
+.resourseEdge {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 30px;
+	/* margin: 0 20px 0 0; */
+}
+.resourseEdge p {
+	padding-left: 30px;
+}
+.resourseEdge img {
+	padding-left: 30px;
+}
+
+.resourseEdge .menu p {
+	font-size: 20px;
+	font-weight: 700;
+	color: #0052cc;
+}
+.baseEmployee .navBar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.baseEmployee .navBar .human {
+	margin-right: 20px;
+}
+
+.baseEmployee .container {
+	margin-top: 60px;
+}
+.baseEmployee .container h3 {
+	font-size: 35px;
+	font-weight: 700;
+	padding-bottom: 15px;
+}
+.baseEmployee .container p {
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.things-to-do {
+	margin-top: 60px;
+}
+.things-to-do h5 {
+	/* margin-top: 60px; */
+	font-size: 24px;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+
+.requirements {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border: 2px solid #e3eaef;
+	margin-bottom: 8px;
+}
+.requirements2 {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 30px;
+}
+
+.requirements2 p {
+	padding-left: 20px;
+}
+
+.requirements .start {
+	padding-right: 20px;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.requirements .resume {
+	background: #f5f6f7;
+}
+.requirements .begin {
+	color: #0052cc;
+}
+
+/* stylling drop down component in dashboard */
+.dropDown {
+	height: 264px;
+	width: 300px;
+	padding: 15px;
+	border: 1px solid steelblue;
+}
+
+.dropDown .name {
+	font-size: 12px;
+	font-weight: 700;
+	padding-top: 20px;
+}
+.dropDown .profile {
+	font-size: 14px;
+	font-weight: 450;
+	padding-top: 8px;
+}
+.dropDown .use {
+	font-size: 12px;
+	font-weight: 700;
+	padding-top: 20px;
+}
+
+.dropDown img {
+	width: 25px;
+	margin: auto;
+}
+
+.dropDown .employee {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+.dropDown .employee2 {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.employee2 p {
+	padding-left: 20px;
 }
 
 @media (max-width: 768px) {
@@ -427,6 +587,14 @@ body {
 	.travelLogistic img {
 		width: 110%;
 		margin: auto;
+	}
+
+	.payroll {
+		margin-top: 50px;
+	}
+	.payroll img {
+		width: 500px;
+		margin: 60px auto;
 	}
 
 	.logo {
@@ -561,6 +729,9 @@ body {
 		padding-top: 40px;
 		width: 100%;
 	}
+	.section .admin1 h5 {
+		font-size: 24px;
+	}
 	.section .admin2 {
 		width: 100%;
 	}
@@ -582,6 +753,14 @@ body {
 		margin-top: 60px;
 		margin-left: 35px;
 		/* width: 50%; */
+	}
+
+	.payroll {
+		margin-top: 50px;
+	}
+	.payroll img {
+		width: 300px;
+		margin: 40px auto;
 	}
 
 	.logo {
@@ -628,6 +807,55 @@ body {
 
 	.innerFooter .small small {
 		display: block;
+	}
+
+	/* for dashboard */
+
+	.resourseEdge {
+		/* display: flex;
+		justify-content: space-between;
+		margin-top: 30px; */
+
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		align-items: center;
+		justify-items: space-between;
+	}
+	.resourseEdge p {
+		padding-left: 30px;
+	}
+	.resourseEdge img {
+		padding-left: 30px;
+	}
+
+	.resourseEdge .menu p {
+		font-size: 20px;
+		font-weight: 700;
+		color: #0052cc;
+	}
+	.baseEmployee .navBar {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.baseEmployee .navBar .human {
+		margin-right: 20px;
+	}
+
+	.baseEmployee .container h3 {
+		font-size: 20px;
+	}
+
+	.things-to-do {
+		margin-top: 60px;
+	}
+	.things-to-do h5 {
+		/* margin-top: 60px; */
+		font-size: 20px;
+	}
+
+	.requirements2 {
+		padding: 10px;
 	}
 }
 @media (max-width: 360px) {
@@ -706,7 +934,7 @@ body {
 	}
 
 	.side-bar .grading h5 {
-		font-size: 20px;
+		font-size: 19px;
 	}
 	.side-bar .grading p {
 		font-size: 14px;
@@ -718,7 +946,7 @@ body {
 
 	.EmployeeDirectory {
 		margin-top: 40px;
-		margin-bottom: -50px;
+		margin-bottom: -20px;
 		margin-left: -35px;
 	}
 
@@ -767,11 +995,19 @@ body {
 		/* width: 50%; */
 	}
 
+	.payroll {
+		margin-top: 50px;
+	}
+	.payroll img {
+		width: 250px;
+		margin: 40px auto;
+	}
+
 	.logo {
 		display: grid;
 		margin-bottom: 80px;
 		margin-top: 30px;
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 3fr 1fr;
 		align-content: center;
 		justify-content: center;
 	}
@@ -811,5 +1047,67 @@ body {
 
 	.innerFooter .small small {
 		display: block;
+	}
+
+	/* stylling form component */
+
+	.emptyEmail .logIn {
+		width: 30%;
+	}
+	.emptyEmail .accessAccount {
+		width: 70%;
+	}
+	/* stylling dashboard */
+	.resourseEdge {
+		/* display: flex;
+		justify-content: space-between;
+		margin-top: 30px; */
+
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		align-items: center;
+		justify-items: space-between;
+	}
+	.resourseEdge p {
+		padding-left: 30px;
+	}
+	.resourseEdge img {
+		padding-left: 30px;
+	}
+
+	.resourseEdge .menu p {
+		font-size: 20px;
+		font-weight: 700;
+		color: #0052cc;
+	}
+	.baseEmployee .navBar {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.baseEmployee .navBar .human {
+		margin-right: 20px;
+	}
+
+	.baseEmployee .container h3 {
+		font-size: 15px;
+	}
+	.baseEmployee .container p {
+		font-size: 12px;
+	}
+
+	.things-to-do {
+		margin-top: 60px;
+	}
+	.things-to-do h5 {
+		/* margin-top: 60px; */
+		font-size: 20px;
+	}
+
+	.requirements2 {
+		padding: 5px;
+	}
+	.requirements2 p {
+		font-size: 8px;
 	}
 }

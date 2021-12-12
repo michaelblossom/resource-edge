@@ -4,32 +4,38 @@ import NavBar from "./Component/NavBar";
 import Home from "./Component/Home";
 import Footer from "./Component/Footer";
 import Signin from "./Authentication/Sign-in";
-// import inputEmail from "./Authentication/Input-Email";
-import InputEmail from "./Authentication/Input-Email";
-import InputEmailTyping from "./Authentication/Input-Email-Typing";
-import InputEmailFilled from "./Authentication/Input-Email-Filled";
 import InputWithEmbededImage from "./Input-with-embeded-image/InputWithImage";
 import FormWithEmbededImage from "./Authentication/Form-With-Embeded-Image";
 
-import InputEmailLoading from "./Authentication/Input-Email-Loading";
 import FormPasswardEmpty from "./Authentication/Form-Passward-Empty";
+import InputPasswardEmpty from "./Authentication/Input-passward-Empty";
 
+import FormValidation from "./Authentication/Form";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import BaseEmployee from "./Dashboard/BaseEmployee";
+import NavDropDown from "./Dashboard/NavDropDown";
+
+import SignUp from "./Authentication/Sign-up";
 function App() {
 	return (
 		<div>
 			<NavBar />
+
+			{/* <Routes>
+				<Route path="/" element={<Signin />} />
+				<Route path="/emailfilled" element={<InputEmailFilled />} />
+				<Route path="/email" element={<InputEmailTyping />} /> */}
+
 			{/* <Home /> */}
 			{/* <Footer /> */}
 			{/* <Signin /> */}
-			{/* <InputEmail /> */}
-			{/* <InputEmailTyping /> */}
+			{/* <InputPasswardEmpty /> */}
+			{/* <FormValidation /> */}
+			{/* <SignUp /> */}
 
-			{/* <InputEmailFilled /> */}
-			{/* <InputEmailLoading /> */}
-			<FormPasswardEmpty />
-
-			{/* <FormWithEmbededImage /> */}
-			{/* <InputWithEmbededImage /> */}
+			<BaseEmployee />
+			<NavDropDown />
+			{/* </Routes> */}
 		</div>
 	);
 }
